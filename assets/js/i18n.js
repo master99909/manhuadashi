@@ -20,7 +20,17 @@ const translations = {
         "download_title": "开始你的阅读之旅",
         "download_desc": "立即体验最强大的本地漫画阅读器。",
         "footer_copyright": "© 2026 漫画大师. 保留所有权利。",
-        "folder_name": "简体"
+        "folder_name": "简体",
+        "feat_custom_title": "个性化定制",
+        "feat_custom_desc": "支持自定义 APP 背景图、背景色、导航栏颜色及文字颜色，打造专属阅读空间。",
+        "feat_lock_title": "隐私保护",
+        "feat_lock_desc": "支持 APP 加锁功能，FaceID/TouchID 解锁，确保漫画内容安全私密。",
+        "feat_sync_title": "云端同步",
+        "feat_sync_desc": "支持 iCloud 云同步功能，多设备间无缝切换，阅读进度自动同步。",
+        "feat_folder_title": "多级分类",
+        "feat_folder_desc": "支持创建多级文件夹与分类，自由定义分组，轻松管理海量漫画。",
+        "feat_shelf_title": "书架布局",
+        "feat_shelf_desc": "支持多种书架样式排版，列表、网格、瀑布流随心切换。"
     },
     "zh-TW": {
         "title": "漫畫大師 - 極致本地閱讀體驗",
@@ -43,7 +53,17 @@ const translations = {
         "download_title": "開始你的閱讀之旅",
         "download_desc": "立即體驗最強大的本地漫畫閱讀器。",
         "footer_copyright": "© 2026 漫畫大師. 保留所有權利。",
-        "folder_name": "繁体"
+        "folder_name": "繁体",
+        "feat_custom_title": "個性化定制",
+        "feat_custom_desc": "支持自定義 APP 背景圖、背景色、導航欄顏色及文字顏色，打造專屬閱讀空間。",
+        "feat_lock_title": "隱私保護",
+        "feat_lock_desc": "支持 APP 加鎖功能，FaceID/TouchID 解鎖，確保漫畫內容安全私密。",
+        "feat_sync_title": "雲端同步",
+        "feat_sync_desc": "支持 iCloud 雲同步功能，多設備間無縫切換，閱讀進度自動同步。",
+        "feat_folder_title": "多級分類",
+        "feat_folder_desc": "支持創建多級文件夾與分類，自由定義分組，輕鬆管理海量漫畫。",
+        "feat_shelf_title": "書架佈局",
+        "feat_shelf_desc": "支持多種書架樣式排版，列表、網格、瀑布流隨心切換。"
     },
     "en": {
         "title": "Manga Master - Ultimate Local Reader",
@@ -66,7 +86,17 @@ const translations = {
         "download_title": "Start Reading Today",
         "download_desc": "Experience the best local manga reader available.",
         "footer_copyright": "© 2026 Manga Master. All rights reserved.",
-        "folder_name": "英语"
+        "folder_name": "英语",
+        "feat_custom_title": "Personalization",
+        "feat_custom_desc": "Customize app background, colors, and fonts to create your unique reading space.",
+        "feat_lock_title": "App Lock",
+        "feat_lock_desc": "Secure your content with FaceID/TouchID protection for complete privacy.",
+        "feat_sync_title": "Cloud Sync",
+        "feat_sync_desc": "Seamless iCloud sync keeps your reading progress up to date across all devices.",
+        "feat_folder_title": "Multi-level Folders",
+        "feat_folder_desc": "Organize your collection with nested folders and custom categories.",
+        "feat_shelf_title": "Bookshelf Layouts",
+        "feat_shelf_desc": "Choose from Grid, List, or Waterfall layouts to display your library your way."
     },
     "ja": {
         "title": "漫画マスター - 究極のローカルリーダー",
@@ -89,7 +119,17 @@ const translations = {
         "download_title": "今すぐ始めよう",
         "download_desc": "最高のローカル漫画リーダーを体験してください。",
         "footer_copyright": "© 2026 Manga Master. All rights reserved.",
-        "folder_name": "日语"
+        "folder_name": "日语",
+        "feat_custom_title": "カスタマイズ",
+        "feat_custom_desc": "アプリの背景、色、テーマを自由にカスタマイズ。あなただけの読書空間を。",
+        "feat_lock_title": "アプリロック",
+        "feat_lock_desc": "FaceID/TouchID ロックでプライバシーを保護。安心して楽しめます。",
+        "feat_sync_title": "クラウド同期",
+        "feat_sync_desc": "iCloud 同期対応。複数のデバイス間で読書の進捗をシームレスに同期。",
+        "feat_folder_title": "多層フォルダ",
+        "feat_folder_desc": "多階層のフォルダとカスタム分類で、膨大なコレクションもすっきり整理。",
+        "feat_shelf_title": "本棚レイアウト",
+        "feat_shelf_desc": "グリッド、リスト、ウォーターフォールなど、好みのレイアウトに切り替え可能。"
     },
     "ko": {
         "title": "만화 마스터 - 최고의 로컬 리더",
@@ -112,7 +152,17 @@ const translations = {
         "download_title": "지금 시작하세요",
         "download_desc": "최고의 로컬 만화 리더를 경험해보세요.",
         "footer_copyright": "© 2026 Manga Master. All rights reserved.",
-        "folder_name": "韩语"
+        "folder_name": "韩语",
+        "feat_custom_title": "개인화 설정",
+        "feat_custom_desc": "배경화면, 테마 색상, 폰트 등을 자유롭게 설정하여 나만의 앱을 만드세요.",
+        "feat_lock_title": "앱 잠금",
+        "feat_lock_desc": "FaceID/TouchID 잠금 기능으로 개인 정보를 안전하게 보호하세요.",
+        "feat_sync_title": "클라우드 동기화",
+        "feat_sync_desc": "iCloud 동기화를 통해 모든 기기에서 독서 진행 상황을 읭어보세요.",
+        "feat_folder_title": "폴더 관리",
+        "feat_folder_desc": "다단계 폴더와 사용자 정의 분류로 방대한 만화를 체계적으로 정리하세요.",
+        "feat_shelf_title": "서재 레이아웃",
+        "feat_shelf_desc": "그리드, 리스트, 폭포수 등 다양한 서재 뷰 모드를 지원합니다."
     }
 };
 
