@@ -195,7 +195,7 @@ function updateCarousel(folderName, altTitle) {
         const encodedFolder = encodeURIComponent(folderName);
         const filename = `Apple iPhone 16 Pro Max Screenshot ${i}.png`;
         const encodedFilename = encodeURIComponent(filename);
-        img.src = `https://github.com/master99909/manhuadashi/blob/main/${encodedFolder}/${encodedFilename}?raw=true`;
+        img.src = `https://raw.githubusercontent.com/master99909/manhuadashi/main/${encodedFolder}/${encodedFilename}`;
         img.alt = `${altTitle} Screenshot ${i}`;
         img.loading = i > 1 ? 'lazy' : 'eager'; // Lazy load non-visible images
 
