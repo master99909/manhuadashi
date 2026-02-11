@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>漫画大师</title>
+  <link rel="stylesheet" href="./assets/css/style.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Icons via unpkg (Lucide or Heroicons) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand">
+        <!-- SVG Logo Placeholder -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="brand-icon" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+        </svg>
+        <span data-i18n="hero_title">漫画大师</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#features" data-i18n="nav_features">功能</a>
+        <a href="#download" data-i18n="nav_download">下载</a>
+        <a href="./agreement.html" data-i18n="nav_agreement">协议</a>
+        <a href="./privacy.html" data-i18n="nav_privacy">隐私</a>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap: 8px;">
+        <div class="lang-select">
+          <button id="lang-btn" class="lang-btn">
+            <i data-lucide="globe" style="width:14px; height:14px;"></i>
+            <span class="arrow" style="font-size: 10px;">▼</span>
+          </button>
+          <div id="lang-dropdown" class="lang-dropdown">
+            <div class="lang-option" data-lang="zh-CN">简体中文</div>
+            <div class="lang-option" data-lang="zh-TW">繁體中文</div>
+            <div class="lang-option" data-lang="en">English</div>
+            <div class="lang-option" data-lang="ja">日本語</div>
+            <div class="lang-option" data-lang="ko">한국어</div>
+          </div>
+        </div>
+        <button class="mobile-menu-btn">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero container reveal">
+      <div class="hero-content">
+        <h1 data-i18n="hero_title">漫画大师</h1>
+        <p data-i18n="hero_subtitle">支持多格式导入、AI 翻译、画质增强。极致体验。</p>
+        <div class="hero-actions">
+          <a href="https://apps.apple.com/app/idYOUR_APP_ID" class="btn btn-primary" data-i18n="btn_download">App Store
+            下载</a>
+          <a href="#features" class="btn btn-secondary" data-i18n="btn_learn_more">了解更多</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="carousel-wrapper">
+          <div class="carousel-container" id="carousel-scroll-area">
+            <div class="carousel-track" id="carousel-track">
+              <!-- Images injected by JS -->
+            </div>
+          </div>
+          <div class="carousel-nav" id="carousel-nav">
+            <!-- Dots injected by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section - Bento Grid -->
+    <section id="features" class="section-padding container">
+      <div class="reveal">
+        <h2 style="text-align:center; margin-bottom: 60px; font-size:32px;" data-i18n="nav_features">功能特性</h2>
+
+        <div class="bento-grid">
+          <!-- 1. Format Support (Wide) -->
+          <div class="bento-card wide">
+            <div>
+              <div class="bento-icon">
+                <i data-lucide="files"></i>
+              </div>
+              <h3 data-i18n="feat_local_title">全格式支持</h3>
+              <p data-i18n="feat_local_desc" style="max-width: 80%;">支持 EPUB, PDF, CBZ, CBR 等主流格式。</p>
+            </div>
+            <!-- Visual: Format Badges -->
+            <div class="bento-visual format-badges">
+              <span class="badge">EPUB</span>
+              <span class="badge">PDF</span>
+              <span class="badge">CBZ</span>
+              <span class="badge">CBR</span>
+              <span class="badge">ZIP</span>
+              <span class="badge">RAR</span>
+            </div>
+          </div>
+
+          <!-- 2. AI Enhance -->
+          <div class="bento-card">
+            <div class="bento-icon">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <div>
+              <h3 data-i18n="feat_enhance_title">画质增强</h3>
+              <p data-i18n="feat_enhance_desc">AI 智能修复低清漫画，还原细节。</p>
+            </div>
+          </div>
+
+          <!-- 3. AI Translation -->
+          <div class="bento-card">
+            <div class="bento-icon">
+              <i data-lucide="languages"></i>
+            </div>
+            <div>
+              <h3 data-i18n="feat_ai_title">AI 翻译</h3>
+              <p data-i18n="feat_ai_desc">打破语言障碍，实时翻译各国漫画。</p>
+            </div>
+          </div>
+
+          <!-- 4. Stats (Tall) -->
+          <div class="bento-card tall">
+            <div class="bento-icon">
+              <i data-lucide="bar-chart-3"></i>
+            </div>
+
+            <!-- Visual: Mock Chart -->
+            <div class="bento-visual stats-chart">
+              <div class="bar" style="height: 40%"></div>
+              <div class="bar" style="height: 70%"></div>
+              <div class="bar" style="height: 50%"></div>
+              <div class="bar" style="height: 100%"></div>
+              <div class="bar" style="height: 60%"></div>
+              <div class="bar" style="height: 80%"></div>
+            </div>
+
+            <div>
+              <h3 data-i18n="feat_stats_title">阅读统计</h3>
+              <p data-i18n="feat_stats_desc">记录你的每一次阅读，生成数据报告。热力图、阅读时长一目了然。</p>
+            </div>
+          </div>
+
+          <!-- 5. Privacy -->
+          <div class="bento-card">
+            <div class="bento-icon">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <div>
+              <h3 data-i18n="nav_privacy">隐私安全</h3>
+              <p>本地优先设计，你的数据只属于你。</p>
+            </div>
+          </div>
+
+          <!-- 6. Dark Mode -->
+          <div class="bento-card">
+            <div class="bento-icon">
+              <i data-lucide="moon"></i>
+            </div>
+            <div>
+              <h3>界面美观</h3>
+              <p>支持深色模式，不仅好用，更是好看。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="container section-padding reveal">
+      <div
+        style="text-align: center; background: linear-gradient(135deg, var(--text-main) 0%, var(--text-secondary) 100%); padding: 80px 40px; border-radius: 40px; color: var(--bg-body);">
+        <h2 style="color: var(--bg-body); margin-bottom: 24px;" data-i18n="download_title">开始你的阅读之旅</h2>
+        <p style="color: rgba(255,255,255,0.8); font-size: 18px; margin-bottom: 40px;" data-i18n="download_desc">立即体验。
+        </p>
+        <a href="https://apps.apple.com/app/idYOUR_APP_ID" class="btn"
+          style="background: var(--bg-body); color: var(--text-main);" data-i18n="btn_download">App Store 下载</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="padding: 40px 0; border-top: 1px solid var(--border-light);">
+    <div class="container footer-content" style="display:flex; justify-content:space-between;">
+      <div class="copyright" data-i18n="footer_copyright" style="font-size:13px; color:var(--text-secondary);">
+        © 2026 漫画大师
+      </div>
+      <div class="footer-links" style="display:flex; gap:24px;">
+        <a href="./agreement.html" data-i18n="nav_agreement"
+          style="font-size:13px; color:var(--text-secondary);">用户协议</a>
+        <a href="./privacy.html" data-i18n="nav_privacy" style="font-size:13px; color:var(--text-secondary);">隐私政策</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js?v=2"></script>
+  <script src="assets/js/legal-nav.js"></script>
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Scroll Reveal Interaction
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile Menu - Updated logic
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuBtn && navLinks) {
+      menuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navLinks.classList.toggle('mobile-active');
+
+        // Change icon to X if active (simplified)
+        // const icon = navLinks.classList.contains('mobile-active') ? 'x' : 'menu';
+        // lucide.icons[icon].toSvg(menuBtn.querySelector('svg'));
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+          navLinks.classList.remove('mobile-active');
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
