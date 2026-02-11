@@ -192,7 +192,10 @@ function updateCarousel(folderName, altTitle) {
         const img = document.createElement('img');
         // Encode URL components just in case, though folderName is safe usually
         // Use GitHub raw content for images
-        img.src = `https://raw.githubusercontent.com/master99909/manhuadashi/main/%E5%AE%98%E7%BD%91%E6%BC%AB%E7%94%BB%E5%A4%A7%E5%B8%88/${folderName}/Apple%20iPhone%2016%20Pro%20Max%20Screenshot%20${i}.png`;
+        const encodedFolder = encodeURIComponent(folderName);
+        const filename = `Apple iPhone 16 Pro Max Screenshot ${i}.png`;
+        const encodedFilename = encodeURIComponent(filename);
+        img.src = `https://github.com/master99909/manhuadashi/blob/main/${encodedFolder}/${encodedFilename}?raw=true`;
         img.alt = `${altTitle} Screenshot ${i}`;
         img.loading = i > 1 ? 'lazy' : 'eager'; // Lazy load non-visible images
 
